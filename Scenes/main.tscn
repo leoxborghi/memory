@@ -1,0 +1,83 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxkwrwprb31nk"]
+
+[ext_resource type="LabelSettings" uid="uid://4nw8xvsge82v" path="res://Resources/Title.tres" id="1_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://d2akrh1hw1qlr" path="res://Scenes/front_sprite.tscn" id="2_8gbba"]
+[ext_resource type="PackedScene" uid="uid://bs2xlrgyw1tq7" path="res://Scenes/LevelButton.tscn" id="2_jjvhh"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3764706, 0.49411765, 1, 0.25490198)
+
+[node name="VB" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 108
+
+[node name="Label" type="Label" parent="VB"]
+layout_mode = 2
+text = "Memory party"
+label_settings = ExtResource("1_bo1nx")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBLevels" type="HBoxContainer" parent="VB"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="LevelButton" parent="VB/HBLevels" instance=ExtResource("2_jjvhh")]
+layout_mode = 2
+
+[node name="LevelButton2" parent="VB/HBLevels" instance=ExtResource("2_jjvhh")]
+layout_mode = 2
+
+[node name="LevelButton3" parent="VB/HBLevels" instance=ExtResource("2_jjvhh")]
+layout_mode = 2
+
+[node name="LevelButton4" parent="VB/HBLevels" instance=ExtResource("2_jjvhh")]
+layout_mode = 2
+
+[node name="LevelButton5" parent="VB/HBLevels" instance=ExtResource("2_jjvhh")]
+layout_mode = 2
+
+[node name="HBSprite" type="HBoxContainer" parent="VB"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 48
+
+[node name="FrontSprite" parent="VB/HBSprite" instance=ExtResource("2_8gbba")]
+layout_mode = 2
+
+[node name="FrontSprite2" parent="VB/HBSprite" instance=ExtResource("2_8gbba")]
+layout_mode = 2
+
+[node name="FrontSprite3" parent="VB/HBSprite" instance=ExtResource("2_8gbba")]
+layout_mode = 2
+
+[node name="FrontSprite4" parent="VB/HBSprite" instance=ExtResource("2_8gbba")]
+layout_mode = 2
+
+[node name="FrontSprite5" parent="VB/HBSprite" instance=ExtResource("2_8gbba")]
+layout_mode = 2

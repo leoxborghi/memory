@@ -1,0 +1,137 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgdkbyo17b56u"]
+
+[ext_resource type="PackedScene" uid="uid://b2l76bsx0vs8q" path="res://Scenes/MemoryTile/memory_tile.tscn" id="1_mv0hc"]
+[ext_resource type="LabelSettings" uid="uid://dtud3h70jso4j" path="res://Resources/LabelWhite24.tres" id="2_qxfds"]
+[ext_resource type="Texture2D" uid="uid://cyjyleop2nndp" path="res://Assets/ui/blue_button00.png" id="3_ciybh"]
+[ext_resource type="Texture2D" uid="uid://c8tl7eec4o6hq" path="res://Assets/ui/yellow_button00.png" id="4_flgk0"]
+[ext_resource type="Texture2D" uid="uid://bsgng1quxjkpt" path="res://Assets/ui/green_button00.png" id="5_vifcx"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HB" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Spacer" type="Control" parent="HB"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GridContainer" type="GridContainer" parent="HB"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 4
+
+[node name="MemoryTile" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile2" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile3" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile4" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile5" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile6" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile7" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile8" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile9" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile10" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="MemoryTile11" parent="HB/GridContainer" instance=ExtResource("1_mv0hc")]
+layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="HB"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VB" type="VBoxContainer" parent="HB"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HB" type="HBoxContainer" parent="HB/VB"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HB/VB/HB"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "moves"
+label_settings = ExtResource("2_qxfds")
+
+[node name="MovesLabel" type="Label" parent="HB/VB/HB"]
+layout_mode = 2
+text = "000"
+label_settings = ExtResource("2_qxfds")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="HB2" type="HBoxContainer" parent="HB/VB"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HB/VB/HB2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "pairs"
+label_settings = ExtResource("2_qxfds")
+
+[node name="Pairs2" type="Label" parent="HB/VB/HB2"]
+layout_mode = 2
+text = "10/10"
+label_settings = ExtResource("2_qxfds")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="HB/VB"]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+
+[node name="ExitButton" type="TextureButton" parent="HB/VB"]
+layout_mode = 2
+texture_normal = ExtResource("3_ciybh")
+texture_pressed = ExtResource("4_flgk0")
+texture_hover = ExtResource("5_vifcx")
+
+[node name="Label" type="Label" parent="HB/VB/ExitButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit"
+label_settings = ExtResource("2_qxfds")
+
+[node name="Spacer3" type="Control" parent="HB"]
+layout_mode = 2
+size_flags_horizontal = 3
