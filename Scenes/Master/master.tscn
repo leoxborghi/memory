@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dsvmjud24wbsw"]
 
 [ext_resource type="Texture2D" uid="uid://cu1ciuh63tqj6" path="res://Assets/images/backgroundEmpty.png" id="1_a4gx0"]
-[ext_resource type="PackedScene" path="res://Scenes/main.tscn" id="2_vq23j"]
+[ext_resource type="PackedScene" uid="uid://cxkwrwprb31nk" path="res://Scenes/main.tscn" id="2_vq23j"]
 [ext_resource type="PackedScene" uid="uid://bgdkbyo17b56u" path="res://Scenes/Game/game.tscn" id="3_vq23j"]
 
 [node name="Master" type="Control"]
@@ -23,8 +23,8 @@ texture = ExtResource("1_a4gx0")
 expand_mode = 1
 
 [node name="Main" parent="." instance=ExtResource("2_vq23j")]
-visible = false
 layout_mode = 1
 
 [node name="Game" parent="." instance=ExtResource("3_vq23j")]
+visible = false
 layout_mode = 1

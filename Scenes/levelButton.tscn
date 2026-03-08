@@ -1,9 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://bs2xlrgyw1tq7"]
+[gd_scene load_steps=8 format=3 uid="uid://bs2xlrgyw1tq7"]
 
 [ext_resource type="Texture2D" uid="uid://yyrlf2xjt4q7" path="res://Assets/ui/level_select_frame_128.png" id="1_ya3fp"]
 [ext_resource type="Texture2D" uid="uid://dplsdkr4aeadj" path="res://Assets/ui/level_select_frame_select_128.png" id="2_280rc"]
 [ext_resource type="Texture2D" uid="uid://cxy28au7ygd8g" path="res://Assets/ui/level_select_frame_hover_128.png" id="3_pmvva"]
 [ext_resource type="LabelSettings" uid="uid://oyvtt4rml4j6" path="res://Resources/LabelWhite48.tres" id="4_280rc"]
+[ext_resource type="Script" uid="uid://dwbpitufsnl4u" path="res://Scenes/LevelButton.gd" id="4_j4cyj"]
+[ext_resource type="Script" uid="uid://ddvi4gcsptpj8" path="res://Classes/LevelSetting.gd" id="5_2lh6k"]
+
+[sub_resource type="Resource" id="Resource_aa54p"]
+script = ExtResource("5_2lh6k")
+rows = 3
+cols = 4
+metadata/_custom_type_script = "uid://ddvi4gcsptpj8"
 
 [node name="LevelButton" type="TextureButton"]
 offset_right = 40.0
@@ -11,6 +19,8 @@ offset_bottom = 40.0
 texture_normal = ExtResource("1_ya3fp")
 texture_pressed = ExtResource("2_280rc")
 texture_hover = ExtResource("3_pmvva")
+script = ExtResource("4_j4cyj")
+level_setting = SubResource("Resource_aa54p")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
