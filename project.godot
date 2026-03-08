@@ -14,6 +14,10 @@ config/name="mem"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SignalHub="*res://Global/SignalHub.gd"
+
 [display]
 
 window/size/viewport_width=1024
