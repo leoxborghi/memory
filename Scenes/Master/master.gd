@@ -7,8 +7,9 @@ extends Control
 
 
 func _ready() -> void:
+
 	SignalHub.on_level_selected.connect(on_level_selected)
-	SignalHub.on.game_exit_pressed.connect(on_game_exit_pressed)
+	SignalHub.on_game_exit_pressed.connect(on_game_exit_pressed)
 	on_game_exit_pressed()
 
 
